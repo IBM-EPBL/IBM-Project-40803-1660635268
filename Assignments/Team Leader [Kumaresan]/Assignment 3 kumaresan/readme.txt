@@ -1,5 +1,5 @@
-Name : 
-Reg No:
+Name : kumaresan s
+Reg No: 713919106018
 College Name:Sri Ranganathar Institute Of Engineering and technology
 Description:
     Assignment 3 (To include cloud object storage,watson assistant)
