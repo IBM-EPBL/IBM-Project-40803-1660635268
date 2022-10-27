@@ -18,7 +18,7 @@ Task 3:Uploaded a css file from local storage to cloud object storage and this f
         "/csspage"  -Route used to view the html page where the css file is returned from the cloud and the css is applied to the page
 
 Task 4:created an watson assistant for to find the branches of the hospital 
-        ChatBot URl :https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fau-syd.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-b7c34bce-b411-4be2-bf13-126163f14530%3A%3A899a49e9-f557-4320-911c-72b686c7da43&integrationID=f23a88eb-fc15-425f-8f71-0d30b3faeed0&region=au-syd&serviceInstanceID=b7c34bce-b411-4be2-bf13-126163f14530
+        ChatBot URl : https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Feu-gb.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-6a20838c-920a-4d9b-903b-316e333aff13%3A%3A5493d50f-0e5a-4da8-9ce0-92c55911ada9&integrationID=a93cf08c-cf77-4717-81f0-fa1372122f77&region=eu-gb&serviceInstanceID=6a20838c-920a-4d9b-903b-316e333aff13
 
 Task 5:created a watson assistant service which includes 10 steps and 3 conditions
         "/bot" - Route where the assistant is included in the httml page
