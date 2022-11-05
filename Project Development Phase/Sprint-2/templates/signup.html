@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+{% block head %}
+<title>signup</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>SignUp</h1>
+    <form action="/signup" method="post">
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input type="text" class="form-control" id="" name="name" placeholder="Enter  name">
+          </div>
+          
+        <div class="mb-3">
+          <label for="" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="Email ID">
+          
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Mobile Number</label>
+            <input type="tel" class="form-control" id="" name="phone" placeholder="Mobile Number">
+          </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Enter the password">
+          
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Re-Enter Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="re-password" placeholder="Re-enter password">
+          </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+          <label class="form-check-label" for="">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+</div>
+
+{% endblock %}
