@@ -1,0 +1,139 @@
+{% extends 'index.html' %}
+{% block head %}
+<title>Donars</title>
+{% endblock %}
+
+{% block body %}
+<div class="plasma">
+    <div class="container">
+        <h1>Be a Donar</h1><br>
+        
+        <form action="/donar-registration" method="post">
+            <div class="mb-3">
+              <label for="" class="form-label">Name</label>
+              <input type="text" class="form-control" id="" name="name" >
+              
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="" name="phone">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Gender</label>
+              <input type="text" class="form-control" id="" name="gender">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Email</label>
+              <input type="text" class="form-control" id="" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Age (18-60)</label>
+                <input type="text" class="form-control" id="" name="age">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Blood Group</label>
+                <input type="text" class="form-control" id="" name="blood-group">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">weight -50kg minimum</label>
+                <input type="text" class="form-control" id="" name="weight">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Any parasitic Infection</label>
+                <input type="text" class="form-control" id="" name="parasitic">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">HIV Test</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hiv" value="positive" id="flexRadioDefault1" >
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Positive
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" id="flexRadioDefault2" name="hiv" value="negative" checked >
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Negative
+                    </label>
+                  </div>
+                
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Any Blood Disease </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="disease" value="yes" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="disease" value="No" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                    </label>
+                  </div>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Injected drugs or Steroids in past three months</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="drugs" value="yes" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="drugs" value="no" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                    </label>
+                  </div>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Vaccine (covid)</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="vaccine" value="yes" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="vaccine" value="no" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                    </label>
+                  </div>
+
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Overall Health in %</label>
+                <input type="text" class="form-control" id="" name="health">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Have you already donated plasma</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="donated" value="yes" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="donated" value="no" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      No
+                    </label>
+                    <div class="mb-3">
+                        <label for="" class="form-label">If yes When was the Last date</label>
+                        <input type="text" class="form-control" id="" name="date">
+                    </div>
+                  </div>
+                
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Register</button>
+            
+          </form>
+    </div>
+
+</div>
+
+{% endblock %}

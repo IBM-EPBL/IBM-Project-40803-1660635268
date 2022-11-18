@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+{% block head %}
+    <title>Sign in</title>
+{% endblock %}
+
+{%block body%}
+<div class="container" style="margin-top:30px ;">
+    <form action="/signin" method="post">
+        <div class="mb-3">
+          <label for="" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="" aria-describedby="emailHelp" name="email" placeholder="Email ID">
+          
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Password</label>
+          <input type="password" class="form-control" id="" placeholder="Enter password" name="password">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button><br><br>
+        <div >
+            <p class="">Create an account.<a href="/signup">Signup</a></p>
+        </div> 
+      </form>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+{% block head %}
+    <title>Plasma List</title>
+{% endblock %}
+
+{%block body%}
+<div class="container" style="margin-top:30px;">
+    <h1>Plasma-Request List</h1>
+    <br>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Age</th>
+            <th scope="col">Blood Group</th>
+            <th scope="col">Gender</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Address</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+          {% if data%}
+          {% for data in data %}
+          <tr>
+            <td>{{data["NAME"]}}</td>
+            <td>{{data["PHONE"]}}</td>
+
+            <td>{{data["AGE"]}}</td>
+            <td>{{data["BLOOD_GROUP"]}}</td>
+            <td>{{data["GENDER"]}}</td>
+            
+            <td>{{data["EMAIL"]}}</td>
+            <td>{{data["ADDRESS"]}}</td>
+
+
+          </tr>
+          {% endfor %}
+          {% else %}
+          {% endif %}          
+        </tbody>
+      </table>
+</div>
+
+{% endblock %}
