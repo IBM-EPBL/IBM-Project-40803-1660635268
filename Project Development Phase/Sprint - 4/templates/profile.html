@@ -1,0 +1,52 @@
+{% extends 'index.html' %}
+{% block head %}
+    <title>Profile</title>
+{% endblock %}
+
+{%block body%} 
+<div class="container">
+    <div class="nav justify-content-end " style="margin-top: 20px;">
+        <button class=" btn btn-primary"><a style="color:whitesmoke; text-decoration: none; " href="/signout">Signout</a></button>
+    </div>
+    <div class="profile-top">
+        <div>
+            <img class="profile-pic" src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" alt="">
+        </div>
+        <div class="details">
+            {% if data %}
+            <h6>NAME    : {{data["NAME"]}}</h6>
+            <h6>Contact : {{data["PHONE"]}}</h6>
+            {% else %}
+            <h6>NAME    : Devarajan</h6>
+            <h6>Contact : 9999999999</h6>
+            {% endif %}
+            <div style="margin-top:30px ;">
+                <a class="profile-buttons"  href="/donar-registration"><button type="button" class="btn btn-outline-danger">Be a donar</button></a>
+                <a class="profile-buttons" style="margin-left:10px ;" href="/plasma-request"> <button type="button" class="btn btn-outline-success">Plasma Request</button></a>
+                
+                
+            </div>
+        </div>
+
+    </div>
+    <br>
+    
+    <br>
+    <!-- <div>
+        <h3>PERSONAL INFO</h3>
+        <hr>
+        <p>Age : 21</p>
+        <br>
+        <p>Blood Groop : A+</p>
+        <br>
+        <p>Gender : Male</p>
+        <br>
+        <p>Address: sefwgwkdngpowrng</p>
+        
+
+        
+
+    </div> -->
+</div>
+
+{% endblock %}

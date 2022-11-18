@@ -1,0 +1,65 @@
+.home-top{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.donar-img{
+    height:300px;
+    width: 400px;
+    border-radius: 50%;
+
+}
+.blood-cells{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.img-bloods{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.blood-cell-img{
+    height: 200px;
+    width: 300px;
+    border-radius: 50%;
+}
+.blood-text{
+    text-align: center;
+    margin-top: 30px;
+}
+.donating{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-top{
+    display: flex;
+    
+}
+.details{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 70px;
+    
+}
+.profile-pic{
+    margin-top:50px;
+    width:300px;
+    height:300px;
+}
+.plasma{
+    width:600px;
+    display: flex;
+    margin:50px;
+    margin-left: 350px;
+    
+}
+.signout-button{
+    position:relative;
+}
