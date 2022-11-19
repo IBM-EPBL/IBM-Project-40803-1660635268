@@ -1,0 +1,91 @@
+{% extends 'index.html' %}
+{% block head %}
+    <title>Plasma List</title>
+{% endblock %}
+
+{%block body%}
+
+{% if data %}
+<div class="container">
+    <div class="form-control">
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Information</th>
+                <th scope="col">Values</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Name</th>
+                <td>{{data["NAME"]}}</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">Age</th>
+                <td>{{data["AGE"]}}</td>
+                
+              </tr>
+              <tr>
+                <th scope="row"> Blood-group</th>
+                <td> {{data["BLOOD_GROUP"]  }}</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">Weight</h4>
+                </th>
+                <td>{{data["WEIGHT"]}}</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">Any Infection</th>
+                <td>{{data["INFECTION"]}}</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">Hiv Status</th>
+                <td>{{data["HIV"]}} </td>
+               
+              </tr>
+              <tr>
+                <th scope="row">Blood Disease</th>
+                <td>{{data["BLOOD_DISEASE"]}}</td>
+               
+              </tr>
+              <tr>
+                <th scope="row"> Drugs Status</th>
+                <td>{{data["DRUGS"]}}</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">Vaccine</th>
+                <td>{{data["VACCINE"]}}</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">Health Staus</th>
+                <td>{{ data["HEALTH"] }}</td>
+               
+              </tr>
+              <tr>
+                <th scope="row">Is Donated </th>
+                <td>{{data["DONATED_PS"]}}</td>
+               
+              </tr>
+
+
+            </tbody>
+          </table>
+            <p>Click the below link to send Mail</p>
+            <a type="button btn btn-success" href="/mail/{{data["ID"]}}"> Request Plasma </a>
+    </div>
+
+
+
+</div>
+
+
+{% endif %}
+
+{% endblock %}
